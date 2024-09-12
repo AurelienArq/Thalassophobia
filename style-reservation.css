@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #021c3d;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 150px; /* Ajustez la valeur en fonction de la hauteur de votre navbar */
+    
+}
+
+.content header,
+.content form {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #03396c;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d2a35; /* Changement de couleur au survol */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #03396c;
+    color: #fff;
+    margin-top: 276px;
+}
+
+.navbar {
+    background-color: #021c3d;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo p {
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar nav li a {
+    display: flex;
+    align-items: center;
+}
+
+.reservation {
+    background-color: #fff; /* Couleur de fond pour la case de réservation */
+    border-radius: 5px; /* Coins arrondis */
+    margin-top: -10px;
+}
+
+.reservation a {
+    color: #03396c !important; /* Ajoutez !important pour forcer la priorité de la couleur du texte */
+    padding: 12px 15px; /* Ajustez la marge selon vos besoins */
+    text-decoration: none;
+}
+
+.reservation-icon {
+    width: 1em; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-right: 5px;
+}
+
+#confirmation-message {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}

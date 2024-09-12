@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-accueil.css">
+    <script src="script.js" defer></script>
+    <title>Thalassophobia - Escape Game</title>
+</head>
+<body>
+    <div class="affiche-container">
+        <div class="image-container">
+            <img src="./Images/Affiche.png" alt="Affiche" class="affiche">
+        </div>
+    </div>
+    
+
+    <div class="navbar">
+        <div class="logo">
+            <h1>Thalassophobia</h1>
+            <p>Escape Game - Mission Abyssale</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Deroule.html">Déroulé</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="reservation"><a href="Reservation.html"><img src="./Images/ticket.png" alt="Réservation" class="reservation-icon">Réservation</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <div id="accueil" class="content">
+        <header>
+            <h1>Escape Game - Mission Abyssale</h1>
+            <p>Explorez les profondeurs inconnues du sous-marin Aurora et échappez-vous avant que le temps ne s'épuise!</p>
+        </header>
+
+        <section id="game-info">
+            <div class="synopsis-header">
+                <h2>Survivez aux Profondeurs Obscures</h2>
+            </div>
+        
+            <div class="synopsis-content">
+                <p>Nous sommes en 2242 sur la mystérieuse planète SAGEB-12, au sein de l'équipe Weydan-1. Votre mission, en tant qu'expert(e) en survie sous-marine, consiste à explorer les dédales du sous-marin Aurora, dont les systèmes sont en déroute suite à l'attaque d'une créature abyssale inconnue.</p>
+                <p>Le destin de l'équipage et le sort du sous-marin reposent entre vos mains. Vous devrez déverrouiller la porte de la cabine, réparer l'IA de l'Aurora, récupérer les coordonnées d'extraction et vous échapper avant que l'oxygène ne s'épuise.</p>
+                <p>Plongez dans cette aventure immersive et testez vos compétences de survie dans les profondeurs abyssales. Le compte à rebours a commencé. Êtes-vous prêt à affronter l'inconnu?</p>
+            </div>
+        </section>
+        
+        
+
+        <section id="target-audience">
+            <div class="info-box">
+                <img src="./Images/age.png" alt="age">
+                <h3>Âge</h3>
+                <p>Idéal pour les 16-25 ans</p>
+            </div>
+        
+            <div class="info-box">
+                <img src="./Images/chrono.png" alt="chrono">
+                <h3>Meilleur Chrono</h3>
+                <p>Equipe : la_s3cte<br>Chrono : 38'53"</p>
+            </div>
+        
+            <div class="info-box">
+                <img src="./Images/reussite.png" alt="reussite">
+                <h3>Pourcentage de réussite</h3>
+                <p>53%</p>
+            </div>
+        </section>
+
+        <section id="how-to-play">
+            <h2>Comment jouer</h2>
+            <p>1. Déverrouillez la porte de la cabine.</p>
+            <p>2. Réparez l'IA de l'Aurora.</p>
+            <p>3. Récupérez les coordonnées d'extraction.</p>
+            <p>4. Échappez-vous avant que l'oxygène ne s'épuise!</p>
+        </section>
+        <div id="quiz" class="content">
+            <h2>À quel profil appartenez-vous ?</h2>
+            <form id="quiz-form">
+                <div class="question-group">
+                    <div class="question">
+                        <label for="q1">Question 1 : Quelle est votre réaction face à l'inconnu?</label>
+                        <select id="q1" name="q1">
+                            <option value="a">Je fonce tête baissée.</option>
+                            <option value="b">Je suis prudent, mais curieux.</option>
+                            <option value="c">Je préfère observer avant d'agir.</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q2">Question 2 : Comment résolvez-vous des problèmes?</label>
+                        <select id="q2" name="q2">
+                            <option value="a">J'aime trouver des solutions rapidement.</option>
+                            <option value="b">Je prends le temps d'analyser toutes les options.</option>
+                            <option value="c">Je recherche des conseils avant de décider.</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q3">Question 3 : Quelle est votre attitude envers le travail d'équipe?</label>
+                        <select id="q3" name="q3">
+                            <option value="a">J'aime diriger et prendre des décisions.</option>
+                            <option value="b">Je préfère collaborer et écouter les idées de chacun.</option>
+                            <option value="c">Je suis plus à l'aise en travaillant seul.</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q4">Question 4 : Comment réagissez-vous sous pression?</label>
+                        <select id="q4" name="q4">
+                            <option value="a">Je reste calme et trouve rapidement des solutions.</option>
+                            <option value="b">Je prends une pause pour réfléchir avant d'agir.</option>
+                            <option value="c">Je ressens du stress, mais je gère.</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q5">Question 5 : Quel est votre rapport avec les technologies?</label>
+                        <select id="q5" name="q5">
+                            <option value="a">Je suis technophile, j'adore découvrir de nouvelles technologies.</option>
+                            <option value="b">Je m'adapte bien aux nouvelles technologies.</option>
+                            <option value="c">Je préfère des approches plus traditionnelles.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question">
+                        <label for="q6">Question 6 : Comment décririez-vous votre approche face à l'inconnu?</label>
+                        <select id="q6" name="q6">
+                            <option value="a">Je suis excité(e) et curieux(se) de découvrir quelque chose de nouveau.</option>
+                            <option value="b">Je reste vigilant(e) et j'évalue la situation avant d'agir.</option>
+                            <option value="c">Je me méfie de l'inconnu et préfère éviter les risques inutiles.</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q7">Question 7 : Comment gérez-vous le stress?</label>
+                        <select id="q7" name="q7">
+                            <option value="a">Je canalise mon stress pour rester concentré(e) et performant(e).</option>
+                            <option value="b">Je prends du recul pour réfléchir et trouver des solutions.</option>
+                            <option value="c">Je ressens du stress, mais je garde le cap malgré tout.</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q8">Question 8 : Quelle est votre approche face à un défi complexe?</label>
+                        <select id="q8" name="q8">
+                            <option value="a">Je saisis l'opportunité de montrer mes compétences et ma créativité.</option>
+                            <option value="b">Je prends le temps d'analyser toutes les facettes du défi.</option>
+                            <option value="c">Je cherche des conseils et des avis avant de prendre des décisions.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question">
+                        <label for="q9">Question 9 : Comment préférez-vous apprendre quelque chose de nouveau?</label>
+                        <select id="q9" name="q9">
+                            <option value="a">J'apprends mieux en pratiquant et en expérimentant.</option>
+                            <option value="b">J'aime comprendre la théorie avant de passer à la pratique.</option>
+                            <option value="c">Je préfère apprendre à travers les conseils et l'expérience des autres.</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q10">Question 10 : Quel rôle préférez-vous dans une équipe?</label>
+                        <select id="q10" name="q10">
+                            <option value="a">J'aime être le leader et prendre des décisions importantes.</option>
+                            <option value="b">Je préfère être un contributeur actif et collaborer avec les autres.</option>
+                            <option value="c">Je suis à l'aise en tant qu'observateur et conseiller.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" onclick="calculateProfile()">Découvrez votre profil</button>
+            </form>
+
+            <div id="result" style="display: none;">
+                <h3>Votre profil :</h3>
+                <p id="profile-description"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Talassophobia - Escape Game. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contact.css">
+    <script src="script.js" defer></script>
+    <title>Talassophobia - Escape Game</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <h1>Talassophobia</h1>
+            <p>Escape Game - Mission Abyssale</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Deroule.html">Déroulé</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="reservation"><a href="Reservation.html"><img src="./Images/ticket.png" alt="Réservation" class="reservation-icon">Réservation</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="contact" class="content">
+        <header>
+            <h1>Contactez-nous</h1>
+            <p>N'hésitez pas à nous contacter si vous avez des questions ou des commentaires.</p>
+        </header>
+
+        <div class="contact-container">
+            <!-- Section gauche avec les informations de contact et le formulaire -->
+            <div class="contact-left">
+                <h2>Vous voulez nous joindre ?</h2>
+
+                <section>
+                    <h3><u>Coordonnées</u></h3>
+                    <p>Téléphone : +12 345 678 910</p>
+                    <p>Email : <a href="mailto:info@talassophobia.com">info@talassophobia.com</a></p>
+                </section>
+
+                <section>
+                    <h3><u>Formulaire de Contact</u></h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail :</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Envoyer</button>
+                    </form>
+                </section>
+            </div>
+
+            <!-- Section droite avec l'adresse et la carte Google Maps -->
+            <div class="contact-right">
+                <section>
+                    <h2>Adresse</h2>
+                    <p>Adresse : 123 Rue de l'Abyss, 2242 SAGEB-12</p>
+                
+
+                    <section class="map-container">
+                        <iframe
+                            title="map"
+                            width="100%"
+                            height="100%"
+                            style="border:0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.358680760045!2d3.8507179154925354!3d43.63583235516508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5a473b9846035%3A0xf42a20cecb0a4409!2sVotre%20Emplacement!5e0!3m2!1sfr!2sfr!4v1635979777641!5m2!1sfr!2sfr"
+                            allowfullscreen
+                        ></iframe>
+                    </section>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Talassophobia - Escape Game. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

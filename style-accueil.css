@@ -1,0 +1,314 @@
+body {
+    /*font-family: 'Arial', sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #021c3d; /* Bleu foncé comme fond marin */
+    color: #fff;
+}
+
+header {
+    background-color: #03396c; /* Bleu un peu plus clair pour le haut de la page */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Légère ombre pour délimiter le contenu */
+}
+
+h2 {
+    color: #03396c; /* Correspondance avec la couleur du header */
+}
+
+button {
+    background-color: #03396c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #03396c;
+    color: #fff;
+    margin-top: 50px;
+}
+
+
+footer p {
+    color: #fff;
+}
+
+.navbar {
+    background-color: #021c3d;
+    color: #fff;
+    padding: 10px;
+    position: fixed; /* Barre de navigation fixe */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000; /* Ajustement du z-index pour rester au-dessus du contenu */
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo p {
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px; /* Ajustez la marge selon vos besoins */
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.navbar nav li a {
+    display: flex;
+    align-items: center;
+}
+
+.reservation {
+    background-color: #fff; /* Couleur de fond pour la case de réservation */
+    border-radius: 5px; /* Coins arrondis */
+    margin-top: -10px;
+}
+
+.reservation a {
+    color: #03396c !important; /* Ajoutez !important pour forcer la priorité de la couleur du texte */
+    padding: 12px 15px; /* Ajustez la marge selon vos besoins */
+    text-decoration: none;
+}
+
+.reservation-icon {
+    width: 1em; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-right: 5px;
+}
+
+.affiche-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.affiche {
+    max-width: 100%; /* Ajustez la taille maximale selon vos préférences */
+    max-height: 100%; /* Ajustez la taille maximale selon vos préférences */
+}
+
+.content {
+    margin-top: 20px; /* Ajustez la valeur selon vos préférences */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #517f7e; /* Fond du contenu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Légère ombre pour délimiter le contenu */
+    position: relative;
+    z-index: 2; /* Place le contenu au-dessus de l'affiche */
+}
+
+#inscription.content {
+    background-color: #fff;
+}
+
+#inscription {
+    max-width: 300px; /* Réduisez la largeur selon vos préférences */
+    margin: 20px auto; /* Centre la section horizontalement */
+}
+
+#inscription-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#inscription-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+    color: #03396c;
+    text-align: center;
+}
+
+#inscription-form input {
+    padding: -5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#inscription-form button {
+    background-color: #03396c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    color: #03396c;
+}
+
+.synopsis-header {
+    text-align: center;
+    color: #03396c;
+    margin-bottom: 20px;
+}
+
+.synopsis-header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.synopsis-content {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+#game-info {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Ajout d'une couleur de fond */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#game-info h2 {
+    color: #03396c;
+}
+
+#game-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+#quiz {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff; /* Changement de couleur de fond */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ajout d'une ombre plus prononcée */
+    color: #03396c;
+}
+
+.question-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.question {
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #021c3d; /* Changement de couleur du texte des questions */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff; /* Changement de couleur de la bordure des menus déroulants */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #03396c; /* Changement de couleur de fond des menus déroulants */
+    color: #fff; /* Changement de couleur du texte des menus déroulants */
+}
+button {
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d2a35; /* Changement de couleur au survol */
+}
+
+select:hover {
+    background-color: #1d2a35; /* Changement de couleur au survol */
+}
+
+#result {
+    margin-top: 20px;
+    color: #03396c;
+}
+
+
+#target-audience {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.info-box {
+    background-color: #d5b989;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 30%; /* Ajustez la largeur selon vos besoins */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Effet box-shadow */
+}
+
+.info-box h3 {
+    margin-top: 0;
+}
+
+.info-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
